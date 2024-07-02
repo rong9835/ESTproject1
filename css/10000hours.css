@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+* {
+    background-color: #5B2386;
+}
+main {
+    font-family: GmarketSansMedium;
+}
+
+body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        background-color: #5B2386;
+    }
+
+
+.title {
+    background-image: url(./clock.png);
+    padding: 74px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+.title img {
+    width: 564px;
+    height: 122px;
+    max-width: 100%; /* 부모 요소의 크기에 맞춰 최대 너비 */
+    max-height: 100%; /* 부모 요소의 크기에 맞춰 최대 높이 */
+}
+
+
+.yellowtext {
+    font-family: OTEnjoystoriesBA;
+    font-size: 36px;
+    color: #F5DF4D;
+    line-height: 39.6px;
+    margin-top: 46px;
+    
+}
+
+.rule {
+    font-family: GmarketSansMedium;
+    font-size: 18px;
+    color: white;
+    line-height: 24px;
+    background-image: url(./quotes.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    margin-top: 78px;
+
+
+
+}
+
+.rule span {
+    font-size: 24px;
+    font-family: GmarketSansBold;
+}
+.rule1 {
+    margin-top: 102px;
+    margin-bottom: 27px;
+}
+.rule1, .rule2 {
+    color: white;
+    font-size: 24px;
+    font-family: GmarketSansMedium;
+    
+}
+
+input {
+    background-color: white;
+    width: 228px;
+    height: 57px;
+    border-radius: 7px;
+    font-size: 24px;
+    font-family: GmarketSansMedium;
+    text-align: center;
+    color: #BABCBE;
+
+    border: 0;
+}
+
+.daybtn {
+    background-color: #fcee21;
+    color: #5b2386;
+    font-size: 24px;
+    font-family: GmarketSansBold;
+    padding: 21px 49px;
+    border-radius: 56px;
+    margin: 0 10px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 115px;
+    position: relative;
+}
+
+
+.click {
+    width: 64px;
+    height: 72px;
+    padding: 3.6px 3.93px 4.91px 4px;
+    position: absolute;
+    top: 20px; 
+    right: 2%; 
+}
+
+
+
+.text1 {
+    font-size: 24px;
+    color: white;
+    margin-top: 147px;
+    margin-bottom: 17px;
+}
+.text2 {
+    font-size: 24px;
+    color: white;
+}
+.text1 > span {
+    font-size: 72px;
+    font-family: GmarketSansBold;
+}
+.text2 > span {
+    font-size: 72px;
+    font-family: GmarketSansBold;
+}
+.go {
+    background-color: #fcee21;
+    padding: 21px 49px;
+    border-radius: 56px;
+    color: #5B2386;
+    font-family: GmarketSansBold;
+    font-size: 24px;
+}
+.share {
+    padding: 21px 49px;
+    border-radius: 56px;
+    color: #5B2386;
+    font-family: GmarketSansBold;
+    font-size: 24px;
+    background-color: white;
+}
+
+.go, .share {
+    margin-top: 127px;
+    margin-right: 18px;
+}
+
+/* footer {
+    margin-bottom: 30px;
+} */
+footer > img {
+    margin-top: 130px;
+    width: 125px;
+    height: 25px;
+}
+footer > div {
+font-family: Noto Sans KR;
+font-size: 12px;
+font-weight: 400;
+line-height: 17.38px;
+text-align: center;
+color: white;
+margin-top: 20px;
+margin-bottom: 70px;
+}
+
+/* 미디어 쿼리 위에는 기본 스타일 -> 기본 pc 환경 */
+
+/* 태블릿 기준 */
+/* @media (max-width: 750px) { */
+    /* 조정 또는 변경하고 싶은 스타일 */
+/* } */
+
+/* 모바일 기준 */
+@media (max-width: 750px) {
+    .title {
+        padding: 74px;
+        margin-top: 76px;
+    }
+    
+    title img {
+        width: 267px;
+        height: 53px;
+        max-width: 100%; /* 부모 요소의 크기에 맞춰 최대 너비 */
+        max-height: 100%; /* 부모 요소의 크기에 맞춰 최대 높이 */
+    }
+    
+    
+    .yellowtext {
+
+        font-size: 22px;
+
+        line-height: 24.2px;
+        margin-top: 31px;
+        
+    }
+    
+    .rule {
+
+        font-size: 14px;
+
+        line-height: 14px;
+
+        margin-top: 62px;
+        
+    
+    }
+    
+    .rule span {
+        font-size: 14px;
+
+    }
+    .rule1 {
+        margin-top: 66px;
+        font-size: 14px;
+    }
+    .rule1, .rule2 {
+        color: white;
+        font-size: 14px;
+        white-space: normal;
+        
+    }
+    
+    .break{
+        display: block;
+        margin-top: 17px;
+        margin-bottom: 19px;
+
+    }
+    input {
+
+        width: 156px;
+        height: 37px;
+        border-radius: 7px;
+        font-size: 14px;
+
+    }
+    
+    .daybtn {
+    width: 241px;
+    height: 68px;
+    padding: 23px 49px 21px 49px;
+    gap: 10px;
+    border-radius: 13px;
+    opacity: 0px;
+    font-size: 14px;
+    line-height: 14px;
+
+    }
+
+
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 49px;
+        position: relative;
+    }
+    
+    
+    .click {
+        width: 64px;
+        height: 72px;
+        padding: 3.6px 3.93px 4.91px 4px;
+        position: absolute;
+        top: 20px; 
+        right: 1%; 
+    }
+    
+    
+    
+    .text1 {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 64px;
+        margin-bottom: 15px;
+    }
+    .text2 {
+        font-size: 14px;
+
+    }
+    .text1 > span {
+        font-size: 24px;
+
+    }
+    .text2 > span {
+        font-size: 24px;
+
+    }
+    .go {
+        
+        padding: 22px 49px 21px 49px;
+        border-radius: 56px;
+        font-size: 14px;
+    }
+    .share {
+        padding: 22px 49px 21px 49px;
+        border-radius: 56px;
+
+
+
+        font-size: 14px;
+
+    }
+    
+    .go, .share {
+        margin-top: 55px;
+        margin-right: 13px;
+    }
+    
+    /* footer {
+        margin-bottom: 30px;
+    } */
+    footer > img {
+        margin-top: 83px;
+        width: 91px;
+        height: 13px;
+    }
+    footer > div {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 13.03px;
+    margin-top: 17px;
+    margin-bottom: 32px;
+    }
+    
+}
